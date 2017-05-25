@@ -19,6 +19,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/logan2g/proprietary/bin/btld:system/bin/btld \
     vendor/samsung/logan2g/proprietary/bin/calibration_init:system/bin/calibration_init \
     vendor/samsung/logan2g/proprietary/bin/cpu:system/bin/cpu \
+    vendor/samsung/logan2g/proprietary/bin/dbus-daemon:system/bin/dbus-daemon \
+    vendor/samsung/logan2g/proprietary/bin/engappclient:system/bin/engappclient \
     vendor/samsung/logan2g/proprietary/bin/engmodemclient:system/bin/engmodemclient \
     vendor/samsung/logan2g/proprietary/bin/engpcclient:system/bin/engpcclient \
     vendor/samsung/logan2g/proprietary/bin/engservice:system/bin/engservice \
@@ -26,10 +28,13 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/logan2g/proprietary/bin/ext_data.sh:system/bin/ext_data.sh \
     vendor/samsung/logan2g/proprietary/bin/ext_kill.sh:system/bin/ext_kill.sh \
     vendor/samsung/logan2g/proprietary/bin/ext_symlink.sh:system/bin/ext_symlink.sh \
+    vendor/samsung/logan2g/proprietary/bin/hostapd:system/bin/hostapd \
     vendor/samsung/logan2g/proprietary/bin/immvibed:system/bin/immvibed \
     vendor/samsung/logan2g/proprietary/bin/lpmkey:system/bin/lpmkey \
     vendor/samsung/logan2g/proprietary/bin/macloader:system/bin/macloader \
+    vendor/samsung/logan2g/proprietary/bin/mfgloader:system/bin/mfgloader \
     vendor/samsung/logan2g/proprietary/bin/modemd:system/bin/modemd \
+    vendor/samsung/logan2g/proprietary/bin/npsmobex:system/bin/npsmobex \
     vendor/samsung/logan2g/proprietary/bin/nvm_daemon:system/bin/nvm_daemon \
     vendor/samsung/logan2g/proprietary/bin/p2p_supplicant:system/bin/p2p_supplicant \
     vendor/samsung/logan2g/proprietary/bin/phoneserver:system/bin/phoneserver \
@@ -40,7 +45,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/logan2g/proprietary/bin/slogctl:system/bin/slogctl \
     vendor/samsung/logan2g/proprietary/bin/sprd_monitor:system/bin/sprd_monitor \
     vendor/samsung/logan2g/proprietary/bin/ss_daemon:system/bin/ss_daemon \
-    vendor/samsung/logan2g/proprietary/bin/vtserver:system/bin/vtserver
+    vendor/samsung/logan2g/proprietary/bin/vtserver:system/bin/vtserver \
+    vendor/samsung/logan2g/proprietary/bin/wlandutservice:system/bin/wlandutservice
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/logan2g/proprietary/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
@@ -94,6 +100,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/logan2g/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf
 
 PRODUCT_COPY_FILES += \
+    vendor/samsung/logan2g/proprietary/etc/audio_hw.xml:system/etc/audio_hw.xml \
     vendor/samsung/logan2g/proprietary/etc/audio_para:system/etc/audio_para \
     vendor/samsung/logan2g/proprietary/etc/audio_policy.conf:system/etc/audio_policy.conf \
     vendor/samsung/logan2g/proprietary/etc/codec_pga.xml:system/etc/codec_pga.xml \
@@ -109,13 +116,15 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/logan2g/proprietary/etc/Volume.db:system/etc/Volume.db
 
 PRODUCT_COPY_FILES += \
+    vendor/samsung/logan2g/proprietary/lib/drm/libdrmwvmplugin.so:system/lib/drm/libdrmwvmplugin.so \
+    vendor/samsung/logan2g/proprietary/lib/drm/libomaplugin.so:system/lib/drm/libomaplugin.so
+
+PRODUCT_COPY_FILES += \
     vendor/samsung/logan2g/proprietary/lib/egl/libEGL_mali.so:system/lib/egl/libEGL_mali.so \
     vendor/samsung/logan2g/proprietary/lib/egl/libGLESv1_CM_mali.so:system/lib/egl/libGLESv1_CM_mali.so \
     vendor/samsung/logan2g/proprietary/lib/egl/libGLESv2_mali.so:system/lib/egl/libGLESv2_mali.so
 
 PRODUCT_COPY_FILES += \
-    vendor/samsung/logan2g/proprietary/lib/hw/audio.primary.sc6820i.so:system/lib/hw/audio.primary.sc6820i.so \
-    vendor/samsung/logan2g/proprietary/lib/hw/audio_policy.sc6820i.so:system/lib/hw/audio_policy.sc6820i.so \
     vendor/samsung/logan2g/proprietary/lib/hw/camera.sc6820i.so:system/lib/hw/camera.sc6820i.so \
     vendor/samsung/logan2g/proprietary/lib/hw/gralloc.sc6820i.so:system/lib/hw/gralloc.sc6820i.so \
     vendor/samsung/logan2g/proprietary/lib/hw/hwcomposer.sc6820i.so:system/lib/hw/hwcomposer.sc6820i.so \
@@ -125,21 +134,17 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/samsung/logan2g/proprietary/lib/libAMSWiFiLibs-1.0.5.so:system/lib/libAMSWiFiLibs-1.0.5.so \
     vendor/samsung/logan2g/proprietary/lib/libatparser.so:system/lib/libatparser.so \
-    vendor/samsung/logan2g/proprietary/lib/libaudiopolicy_sec.so:system/lib/libaudiopolicy_sec.so \
     vendor/samsung/logan2g/proprietary/lib/libaudio-ril.so:system/lib/libaudio-ril.so \
-    vendor/samsung/logan2g/proprietary/lib/libbinder.so:system/lib/libbinder.so \
-    vendor/samsung/logan2g/proprietary/lib/libcontrolcsc.so:system/lib/libcontrolcsc.so \
     vendor/samsung/logan2g/proprietary/lib/libDisplaySyncModule.so:system/lib/libDisplaySyncModule.so \
     vendor/samsung/logan2g/proprietary/lib/libengclient.so:system/lib/libengclient.so \
     vendor/samsung/logan2g/proprietary/lib/libeng_wifi_ptest.so:system/lib/libeng_wifi_ptest.so \
-    vendor/samsung/logan2g/proprietary/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
     vendor/samsung/logan2g/proprietary/lib/libfmradio_jni.so:system/lib/libfmradio_jni.so \
     vendor/samsung/logan2g/proprietary/lib/libfmservice.so:system/lib/libfmservice.so \
     vendor/samsung/logan2g/proprietary/lib/libImmVibeJ.so:system/lib/libImmVibeJ.so \
     vendor/samsung/logan2g/proprietary/lib/libisp.so:system/lib/libisp.so \
     vendor/samsung/logan2g/proprietary/lib/libjackpal-androidterm3.so:system/lib/libjackpal-androidterm3.so \
-    vendor/samsung/logan2g/proprietary/lib/libjackpal-androidterm5.so:system/lib/libjackpal-androidterm5.so \
-    vendor/samsung/logan2g/proprietary/lib/libjackpal-termexec2.so:system/lib/libjackpal-termexec2.so \
+    vendor/samsung/logan2g/proprietary/lib/libjpega.so:system/lib/libjpega.so \
+    vendor/samsung/logan2g/proprietary/lib/libkeystore_client.so:system/lib/libkeystore_client.so \
     vendor/samsung/logan2g/proprietary/lib/libLifevibes_lvvefs.so:system/lib/libLifevibes_lvvefs.so \
     vendor/samsung/logan2g/proprietary/lib/liblvvewrapper.so:system/lib/liblvvewrapper.so \
     vendor/samsung/logan2g/proprietary/lib/libMali.so:system/lib/libMali.so \
@@ -158,18 +163,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/logan2g/proprietary/lib/libquramimagecodec.so:system/lib/libquramimagecodec.so \
     vendor/samsung/logan2g/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
     vendor/samsung/logan2g/proprietary/lib/libril.so:system/lib/libril.so \
-    vendor/samsung/logan2g/proprietary/lib/libsamsungRecord.so:system/lib/libsamsungRecord.so \
-    vendor/samsung/logan2g/proprietary/lib/lib_SamsungRec_V01006.so:system/lib/lib_SamsungRec_V01006.so \
-    vendor/samsung/logan2g/proprietary/lib/lib_Samsung_Resampler.so:system/lib/lib_Samsung_Resampler.so \
-    vendor/samsung/logan2g/proprietary/lib/lib_Samsung_SB_AM_for_ICS_v03008.so:system/lib/lib_Samsung_SB_AM_for_ICS_v03008.so \
-    vendor/samsung/logan2g/proprietary/lib/libsamsungSoundbooster.so:system/lib/libsamsungSoundbooster.so \
     vendor/samsung/logan2g/proprietary/lib/libseccameracore.so:system/lib/libseccameracore.so \
     vendor/samsung/logan2g/proprietary/lib/libseccamera_jni.so:system/lib/libseccamera_jni.so \
     vendor/samsung/logan2g/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
-    vendor/samsung/logan2g/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
-    vendor/samsung/logan2g/proprietary/lib/libsoundalive.so:system/lib/libsoundalive.so \
-    vendor/samsung/logan2g/proprietary/lib/lib_SoundAlive_V01013p.so:system/lib/lib_SoundAlive_V01013p.so \
-    vendor/samsung/logan2g/proprietary/lib/libSoundAlive_VSP_ver312a.so:system/lib/libSoundAlive_VSP_ver312a.so \
     vendor/samsung/logan2g/proprietary/lib/libsoundspeed.so:system/lib/libsoundspeed.so \
     vendor/samsung/logan2g/proprietary/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so \
     vendor/samsung/logan2g/proprietary/lib/libstagefright_soft_h264dec_sprd.so:system/lib/libstagefright_soft_h264dec_sprd.so \
@@ -177,6 +173,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/logan2g/proprietary/lib/libUMP.so:system/lib/libUMP.so \
     vendor/samsung/logan2g/proprietary/lib/libvbeffect.so:system/lib/libvbeffect.so \
     vendor/samsung/logan2g/proprietary/lib/libvbpga.so:system/lib/libvbpga.so \
+    vendor/samsung/logan2g/proprietary/lib/libvcdecoder_jni.so:system/lib/libvcdecoder_jni.so \
     vendor/samsung/logan2g/proprietary/lib/libvolumemanager.so:system/lib/libvolumemanager.so \
     vendor/samsung/logan2g/proprietary/lib/libwvdrm_L3.so:system/lib/libwvdrm_L3.so \
     vendor/samsung/logan2g/proprietary/lib/libwvm.so:system/lib/libwvm.so \
@@ -219,5 +216,4 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/samsung/logan2g/proprietary/vendor/firmware/fw_bcmdhd_apsta.bin:system/vendor/firmware/fw_bcmdhd_apsta.bin \
     vendor/samsung/logan2g/proprietary/vendor/firmware/fw_bcmdhd.bin:system/vendor/firmware/fw_bcmdhd.bin \
-    vendor/samsung/logan2g/proprietary/vendor/firmware/fw_bcmdhd_p2p.bin:system/vendor/firmware/fw_bcmdhd_p2p.bin \
-    vendor/samsung/logan2g/proprietary/vendor/firmware/vbc_eq:system/vendor/firmware/vbc_eq
+    vendor/samsung/logan2g/proprietary/vendor/firmware/fw_bcmdhd_p2p.bin:system/vendor/firmware/fw_bcmdhd_p2p.bin
