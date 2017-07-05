@@ -19,11 +19,13 @@
 * Open terminal in Cyanogenmod source directory.
 * mkdir -p device/samsung
 * cd device/samsung/
-* git clone -b cm-11.0 https://github.com/ItsAnilSingh/android_device_samsung_logan2g.git logan2g
-
+* git clone -b cm-11.0 https://github.com/orgess2/android_device_samsung_logan2g.git logan2g
+ This repository is forked from ItsAnilSingh (https://github.com/ItsAnilSingh) so credits goes to him
+ If you want to keep updated follow his Github Account ,not mine
 ### Kernel Source
 * Open terminal in Cyanogenmod source directory.
 * mkdir -p kernel/samsung
 * cd kernel/samsung/
-* git clone https://github.com/ItsAnilSingh/android_kernel_samsung_logan2g.git logan2g
-
+* git clone https://github.com/orgess2/android_kernel_samsung_logan2g.git logan2g
+ This repository is forked from ItsAnilSingh (https://github.com/ItsAnilSingh) so credits goes to him
+ If you want to keep updated follow his Github Account ,not mine
